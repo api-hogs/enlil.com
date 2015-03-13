@@ -1,0 +1,230 @@
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media only screen and (max-width: 1300px) {
+    .main {
+        padding: 260px 0 0 0;
+    }
+    .items_slider {
+        top: 350px;
+        height: 750px;
+    }
+    .items_slider .l_txt {
+        margin-top: 4%;
+    }
+    .items_slider:after {
+        top: 700px;
+    }
+    .bg_slider_controls {
+        top: 500px;
+    }
+}
+@media only screen and (max-width: 1140px) {
+    .main {
+        padding: 160px 0 0 0;
+    }
+    .bg_slider > div {
+        background-size: 100%;
+    }
+    .items_slider {
+        top: 300px;
+        height: 700px;
+    }
+    .items_slider:after {
+        top: 650px;
+    }
+    .items_slider header .copter {
+        width: 55%;
+        top: -35px;
+    }
+    .items_slider .l_txt {
+        font-size: 1em;
+        line-height: 1.45em;
+    }
+    .items_slider .item {
+        height: 65%;
+        bottom: -2%;
+    }
+    .items_slider header h2 {
+        font-size: 1.5em;
+        width: 45%;
+        margin: 7% 0 0 54%;
+    }
+    .bg_slider_controls {
+        top: 450px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .bg_slider > div {
+        background-size: auto 60%;
+    }
+    .bg_slider_controls {
+        top: 390px;
+    }
+    .items_slider {
+        top: 28%;
+    }
+    .items_slider header .copter {
+        width: 65%;
+    }
+    .items_slider .item {
+        bottom: 15%;
+        height: 46%;
+    }
+    .items_slider header h2 {
+        font-size: 1.2em;
+        margin: 10% 0 0 54%;
+    }
+    .items_slider .l_txt { margin-top: 1%;}
+    .main {
+        padding: 105px 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .bg_slider > div {
+        background-size: auto 50%;
+    }
+    .items_slider {
+        top: 25%;
+    }
+    .items_slider header .copter {
+        width: 75%;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+.clr:after {
+    display: inline-block;
+    content: '';
+    width: 100%;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
